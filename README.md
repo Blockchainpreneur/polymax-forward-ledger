@@ -12,7 +12,7 @@ always.** Backtests can be tuned; a forward ledger cannot.
 | Forward hit rate | **—%** |
 | Realized paper P&L | **+$0.00** |
 | Today's sha256 | `4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945` |
-| Days fingerprinted | 6 |
+| Days fingerprinted | 7 |
 
 ## Why this repo exists
 
