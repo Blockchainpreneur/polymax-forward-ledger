@@ -8,11 +8,11 @@ always.** Backtests can be tuned; a forward ledger cannot.
 
 | | |
 |---|---|
-| Settled verdicts | **0** (0W / 0L) |
-| Forward hit rate | **—%** |
-| Realized paper P&L | **+$0.00** |
-| Today's sha256 | `4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945` |
-| Days fingerprinted | 9 |
+| Settled verdicts | **18** (10W / 8L) |
+| Forward hit rate | **55.6%** |
+| Realized paper P&L | **−$295.84** |
+| Today's sha256 | `c2679df8806b3b4307a076973820cb7f1838702cd0aa6e15ab42850cd5145f75` |
+| Days fingerprinted | 10 |
 
 ## Why this repo exists
 
