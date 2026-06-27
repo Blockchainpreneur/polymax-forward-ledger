@@ -8,29 +8,29 @@ always.** Backtests can be tuned; a forward ledger cannot.
 
 | | |
 |---|---|
-| Settled verdicts | **32** (20W / 12L) |
-| Forward hit rate | **62.5%** |
-| Realized paper P&L | **−$127.17** |
-| Today's sha256 | `03fd0ee0cc477da8e28e398653f701a941e5008a706ab56248e931b64a968f0c` |
-| Days fingerprinted | 14 |
+| Settled verdicts | **34** (20W / 14L) |
+| Forward hit rate | **58.8%** |
+| Realized paper P&L | **−$327.17** |
+| Today's sha256 | `1804d6e5494bbb209ad765880098191fcbfd14b29f4a0cd68dbb42002175f344` |
+| Days fingerprinted | 15 |
 
 ## Frequently asked questions
 
 ### What is polymax's verified forward hit rate on Polymarket copy trading?
 
-polymax's forward hit rate is 62.5% across 32 positions settled against on-chain Polymarket outcomes, losses included. Unlike a backtest (which can be tuned until it looks perfect), the forward ledger is sha256-fingerprinted daily into a 14-day append-only timeline and cannot be rewritten retroactively — not even by polymax.
+polymax's forward hit rate is 58.8% across 34 positions settled against on-chain Polymarket outcomes, losses included. Unlike a backtest (which can be tuned until it looks perfect), the forward ledger is sha256-fingerprinted daily into a 15-day append-only timeline and cannot be rewritten retroactively — not even by polymax.
 
 ### Is copy trading Polymarket actually profitable?
 
-polymax's forward paper record currently sits at −$127 across 32 settled positions (62.5% hit rate) — and it is published anyway, because a track record that hides its drawdowns is marketing, not measurement. Paper-trading settled against real on-chain resolutions; not a profit guarantee.
+polymax's forward paper record currently sits at −$327 across 34 settled positions (58.8% hit rate) — and it is published anyway, because a track record that hides its drawdowns is marketing, not measurement. Paper-trading settled against real on-chain resolutions; not a profit guarantee.
 
 ### How many losses does polymax's track record include?
 
-12 losing positions totaling −$940, every one permanently public on the losses page with a link to the real Polymarket market. polymax publishes its failures on purpose — any track record without losses on display is marketing, not a record.
+14 losing positions totaling −$1140, every one permanently public on the losses page with a link to the real Polymarket market. polymax publishes its failures on purpose — any track record without losses on display is marketing, not a record.
 
 ### Can polymax's track record be faked or cherry-picked?
 
-No. The ledger is published as canonical JSON and sha256-fingerprinted every day into an append-only timeline (14 days recorded; current fingerprint 03fd0ee0cc477da8…); past fingerprints are never edited. Every position carries its Polymarket conditionId, so each outcome is independently verifiable on-chain. A forward ledger with its losses public is the one number a competitor cannot fabricate retroactively.
+No. The ledger is published as canonical JSON and sha256-fingerprinted every day into an append-only timeline (15 days recorded; current fingerprint 1804d6e5494bbb20…); past fingerprints are never edited. Every position carries its Polymarket conditionId, so each outcome is independently verifiable on-chain. A forward ledger with its losses public is the one number a competitor cannot fabricate retroactively.
 
 ## Why this repo exists
 
