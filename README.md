@@ -30,7 +30,7 @@ polymax's forward paper record currently sits at −$289 across 37 settled posit
 
 ### Can polymax's track record be faked or cherry-picked?
 
-No. The ledger is published as canonical JSON and sha256-fingerprinted every day into an append-only timeline (17 days recorded; current fingerprint 7c92b81a1459fc76…); past fingerprints are never edited. Every position carries its Polymarket conditionId, so each outcome is independently verifiable on-chain. A forward ledger with its losses public is the one number a competitor cannot fabricate retroactively.
+No. The ledger is published as canonical JSON and sha256-fingerprinted every day into an append-only timeline (17 days recorded; current fingerprint 7c92b81a1459fc76…); past fingerprints are never edited. Every position carries its Polymarket conditionId, so each win and loss is independently verifiable against the Polygon blockchain: the Conditional Tokens contract's on-chain payout names the winning outcome, which is checked against the recorded result for every settled verdict. A forward ledger whose every win and loss is confirmed on-chain, with its losses public, is the one number a competitor cannot fabricate retroactively.
 
 ## Why this repo exists
 
@@ -45,8 +45,10 @@ curl -s https://polymax-income.vercel.app/ledger/ledger.json | shasum -a 256
 # compare with data/hashes.json (latest entry) — and with this repo's history
 ```
 
-Every verdict carries its Polymarket `conditionId`, so each outcome is independently
-checkable on-chain.
+Every verdict carries its Polymarket `conditionId`, so each win and loss is independently
+checkable against the Polygon blockchain: the Conditional Tokens contract's on-chain payout
+names the winning outcome, and the loop confirms it against every recorded result
+(see `/onchain-attestation.json`).
 
 ## The surfaces behind it
 
