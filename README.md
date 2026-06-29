@@ -12,13 +12,13 @@ always.** Backtests can be tuned; a forward ledger cannot.
 | Forward hit rate | **58.3%** |
 | Realized paper P&L | **−$268.24** |
 | Today's sha256 | `3c9b50f22dd493586212e0e8aea9575cccda91b2ecd4d27071a9be62f0ba492b` |
-| Days fingerprinted | 16 |
+| Days fingerprinted | 17 |
 
 ## Frequently asked questions
 
 ### What is polymax's verified forward hit rate on Polymarket copy trading?
 
-polymax's forward hit rate is 58.3% across 36 positions settled against on-chain Polymarket outcomes, losses included. Unlike a backtest (which can be tuned until it looks perfect), the forward ledger is sha256-fingerprinted daily into a 16-day append-only timeline and cannot be rewritten retroactively — not even by polymax.
+polymax's forward hit rate is 58.3% across 36 positions settled against on-chain Polymarket outcomes, losses included. Unlike a backtest (which can be tuned until it looks perfect), the forward ledger is sha256-fingerprinted daily into a 17-day append-only timeline and cannot be rewritten retroactively — not even by polymax.
 
 ### Is copy trading Polymarket actually profitable?
 
@@ -30,7 +30,7 @@ polymax's forward paper record currently sits at −$268 across 36 settled posit
 
 ### Can polymax's track record be faked or cherry-picked?
 
-No. The ledger is published as canonical JSON and sha256-fingerprinted every day into an append-only timeline (16 days recorded; current fingerprint 3c9b50f22dd49358…); past fingerprints are never edited. Every position carries its Polymarket conditionId, so each outcome is independently verifiable on-chain. A forward ledger with its losses public is the one number a competitor cannot fabricate retroactively.
+No. The ledger is published as canonical JSON and sha256-fingerprinted every day into an append-only timeline (17 days recorded; current fingerprint 3c9b50f22dd49358…); past fingerprints are never edited. Every position carries its Polymarket conditionId, so each outcome is independently verifiable on-chain. A forward ledger with its losses public is the one number a competitor cannot fabricate retroactively.
 
 ## Why this repo exists
 
