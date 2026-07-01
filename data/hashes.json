@@ -145,10 +145,10 @@
  },
  {
   "date": "2026-07-01",
-  "sha256": "d092ac7dff0c6dab023399900b88820494324b9fe84467d378ad8ca826a217f1",
-  "settled": 38,
-  "wins": 22,
+  "sha256": "9f254a10b62c08fb7c922fe860609ea10eae9daa1d3464d08af0a55f7c93ee37",
+  "settled": 41,
+  "wins": 25,
   "losses": 16,
-  "pnlUsd": -278.83
+  "pnlUsd": -255.64
  }
 ]
