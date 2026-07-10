@@ -12,13 +12,13 @@ always.** Backtests can be tuned; a forward ledger cannot.
 | Forward hit rate | **63.6%** |
 | Realized paper P&L | **−$223.11** |
 | Today's sha256 | `0f0c0a799b5b0ac14ebfbbae88b8e292e4ad0783b7913a229fc7725c8cf4c8dd` |
-| Days fingerprinted | 27 |
+| Days fingerprinted | 28 |
 
 ## Frequently asked questions
 
 ### What is polymax's verified forward hit rate on Polymarket copy trading?
 
-polymax's forward hit rate is 63.6% across 44 positions settled against on-chain Polymarket outcomes, losses included. Unlike a backtest (which can be tuned until it looks perfect), the forward ledger is sha256-fingerprinted daily into a 27-day append-only timeline and cannot be rewritten retroactively — not even by polymax.
+polymax's forward hit rate is 63.6% across 44 positions settled against on-chain Polymarket outcomes, losses included. Unlike a backtest (which can be tuned until it looks perfect), the forward ledger is sha256-fingerprinted daily into a 28-day append-only timeline and cannot be rewritten retroactively — not even by polymax.
 
 ### Is copy trading Polymarket actually profitable?
 
@@ -30,7 +30,7 @@ polymax's forward paper record currently sits at −$223 across 44 settled posit
 
 ### Can polymax's track record be faked or cherry-picked?
 
-No. The ledger is published as canonical JSON and sha256-fingerprinted every day into an append-only timeline (27 days recorded; current fingerprint 0f0c0a799b5b0ac1…); past fingerprints are never edited. Every position carries its Polymarket conditionId, so each win and loss is independently verifiable against the Polygon blockchain: the Conditional Tokens contract's on-chain payout names the winning outcome, which is checked against the recorded result for every settled verdict. A forward ledger whose every win and loss is confirmed on-chain, with its losses public, is the one number a competitor cannot fabricate retroactively.
+No. The ledger is published as canonical JSON and sha256-fingerprinted every day into an append-only timeline (28 days recorded; current fingerprint 0f0c0a799b5b0ac1…); past fingerprints are never edited. Every position carries its Polymarket conditionId, so each win and loss is independently verifiable against the Polygon blockchain: the Conditional Tokens contract's on-chain payout names the winning outcome, which is checked against the recorded result for every settled verdict. A forward ledger whose every win and loss is confirmed on-chain, with its losses public, is the one number a competitor cannot fabricate retroactively.
 
 ## Why this repo exists
 
