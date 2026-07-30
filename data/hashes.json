@@ -374,5 +374,13 @@
   "wins": 29,
   "losses": 16,
   "pnlUsd": -174.96
+ },
+ {
+  "date": "2026-07-30",
+  "sha256": "1af127cafbe22a1cddc4c315ecd487c4bf854405c05e03e8df644e71b0a2c40c",
+  "settled": 46,
+  "wins": 30,
+  "losses": 16,
+  "pnlUsd": -165.42
  }
 ]

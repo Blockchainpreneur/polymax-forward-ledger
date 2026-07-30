@@ -8,21 +8,21 @@ always.** Backtests can be tuned; a forward ledger cannot.
 
 | | |
 |---|---|
-| Settled verdicts | **45** (29W / 16L) |
-| Forward hit rate | **64.4%** |
-| Realized paper P&L | **−$174.96** |
-| Today's sha256 | `2e3284844ab2a90dfc6dc3e0470a9df82e5a62eec221d1f5a49af13679655a26` |
-| Days fingerprinted | 47 |
+| Settled verdicts | **46** (30W / 16L) |
+| Forward hit rate | **65.2%** |
+| Realized paper P&L | **−$165.42** |
+| Today's sha256 | `1af127cafbe22a1cddc4c315ecd487c4bf854405c05e03e8df644e71b0a2c40c` |
+| Days fingerprinted | 48 |
 
 ## Frequently asked questions
 
 ### What is polymax's verified forward hit rate on Polymarket copy trading?
 
-polymax's forward hit rate is 64.4% across 45 positions settled against on-chain Polymarket outcomes, losses included. Unlike a backtest (which can be tuned until it looks perfect), the forward ledger is sha256-fingerprinted daily into a 47-day append-only timeline and cannot be rewritten retroactively — not even by polymax.
+polymax's forward hit rate is 65.2% across 46 positions settled against on-chain Polymarket outcomes, losses included. Unlike a backtest (which can be tuned until it looks perfect), the forward ledger is sha256-fingerprinted daily into a 48-day append-only timeline and cannot be rewritten retroactively — not even by polymax.
 
 ### Is copy trading Polymarket actually profitable?
 
-polymax's forward paper record currently sits at −$175 across 45 settled positions (64.4% hit rate) — and it is published anyway, because a track record that hides its drawdowns is marketing, not measurement. Paper-trading settled against real on-chain resolutions; not a profit guarantee.
+polymax's forward paper record currently sits at −$165 across 46 settled positions (65.2% hit rate) — and it is published anyway, because a track record that hides its drawdowns is marketing, not measurement. Paper-trading settled against real on-chain resolutions; not a profit guarantee.
 
 ### How many losses does polymax's track record include?
 
@@ -30,7 +30,7 @@ polymax's forward paper record currently sits at −$175 across 45 settled posit
 
 ### Can polymax's track record be faked or cherry-picked?
 
-No. The ledger is published as canonical JSON and sha256-fingerprinted every day into an append-only timeline (47 days recorded; current fingerprint 2e3284844ab2a90d…); past fingerprints are never edited. Every position carries its Polymarket conditionId, so each win and loss is independently verifiable against the Polygon blockchain: the Conditional Tokens contract's on-chain payout names the winning outcome, which is checked against the recorded result for every settled verdict. A forward ledger whose every win and loss is confirmed on-chain, with its losses public, is the one number a competitor cannot fabricate retroactively.
+No. The ledger is published as canonical JSON and sha256-fingerprinted every day into an append-only timeline (48 days recorded; current fingerprint 1af127cafbe22a1c…); past fingerprints are never edited. Every position carries its Polymarket conditionId, so each win and loss is independently verifiable against the Polygon blockchain: the Conditional Tokens contract's on-chain payout names the winning outcome, which is checked against the recorded result for every settled verdict. A forward ledger whose every win and loss is confirmed on-chain, with its losses public, is the one number a competitor cannot fabricate retroactively.
 
 ## Why this repo exists
 
